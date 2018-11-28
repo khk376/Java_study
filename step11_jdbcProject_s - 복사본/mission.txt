@@ -1,0 +1,44 @@
+1. 전체 구조 이해하고 분석하기
+	- 미흡하고 찝찝한 구조 재정리 하기
+	
+2. sql문장을 DB에 적용하기
+	- sql 폴더 하단에 두개의 file을 sql plus에서 db에 적용하기
+	- DB에 적용하는 순도 중요
+	- DB의 내용 select
+	
+3. ActivistDAO 클래스 완성하기
+
+4. DBUtil.java 에 db.properties 적용해 보기
+
+5. 응용[옵션]
+	- ProbonoService.java 사용 방법 강구 
+	- 관점 : enterprise 개발 및 관리자 관점
+	
+6. pattern	
+	1. MVC
+	2. DAO
+	3. DTO[VO]
+	4. SingleTon 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

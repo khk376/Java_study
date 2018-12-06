@@ -1,9 +1,0 @@
-package step02.mvc.controller;
-
-public class Controller {
-	/* 1번 요청 - Person 정보 검색
-	 * 2번 요청 - 나이값 수정
-	 * 하나의 메소드에서 구분해서 Model의 메소드를 구분해서 실행 요청
-	 * 실행 결과를 EndView 출력을 위임
-	 */
-}

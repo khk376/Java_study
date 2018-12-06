@@ -1,0 +1,51 @@
+/* 
+ 1. Test 라는 클래스에 정수의 제곱을 출력하는 메소드(sqr)를 만드시오.
+    return type은 int 이고, static으로 선언하시오.
+*/
+<정답 예시>
+public class Test {
+	
+	public static int sqr(int a) {
+		return a*a;
+	}
+	
+	public static void main(String[] args) {
+		System.out.println(sqr(2));
+	}
+}
+
+/*
+2.  밑의 코드의 A1, B1, C1, Test class 의 생성 순서를 예측하시오.
+	   정답 -> B1, A1, Test, C1
+ */
+
+<코드>
+public class Test {
+	
+	Test() {
+		System.out.println("Test");
+	}
+
+	public static void main(String[] args) {
+		C1 c1 = new C1();
+	}
+}
+
+class A1{
+	A1(){
+		System.out.println("A1");
+		Test t = new Test();
+	}
+}
+class B1{
+	B1(){
+		System.out.println("B1");
+	}
+}
+class C1{
+	C1(){
+		System.out.println("C1");
+	}
+	B1 c1 = new B1();
+	A1 c2 = new A1();
+}

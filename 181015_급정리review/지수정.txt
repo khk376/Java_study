@@ -1,0 +1,54 @@
+1. b3는 b와 b2를 곱한 값이다. 사칙연산 및 결과값을 호출을 위해 아래 빈 칸을 채워 넣으시오.
+
+package step01_syntax;
+
+public class Syntax5Variable {
+	public Syntax5Variable() {}
+	
+	public static void ADD(){
+		byte a = 10;
+		byte a2 = 20;
+		byte a3 = ___________
+		System.out.println(a3);
+	}
+
+public static void main(String[] args) {
+
+___________;
+
+	}
+}
+
+2. 이어서 'A' 또는 99라는 출력값이 나오도록 아래 빈칸을 채워 넣으시오.
+
+class A{
+	String aData = "A";
+}
+
+class B{
+	B bData = new A();
+}
+
+class C {
+	B cData = new B();
+	int cNo=99;
+	C(){
+		System.out.println("C");
+	}
+}
+
+	public static void main(String[] args) {
+			
+		A a = new A();
+		System.out.println(_________________); //A
+		
+		B b = new B();
+		System.out.println(_________________); //A
+
+		C c = new C();
+		System.out.println(_________________); // A
+		System.out.println(_________________); // 99
+	}
+
+}
+		

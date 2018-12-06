@@ -1,0 +1,35 @@
+Question 1. 
+형변환문제: double(64) -> int(32) 
+0.0 과 1.0 사이의 double type의 랜덤 난수를 출력 후, 그 값에 5를 더한 뒤, 
+정수부분만 int로 변환하여 출력하세요.
+
+Question 2. 
+public static void concat(){
+    여기에 concat 사용하여 "오늘은 ", "행복한 ", "월요일!" 출력하세요.
+}
+    
+
+public class Syntax5Variable{
+	//1.
+	public static void typeCasting2(){
+		double d  = Math.random();
+		d = (double)(d+5);
+		System.out.println(d);
+		int i = int(d);
+		System.out.println(i);
+	}
+	//2.
+	public static void concat(){
+	String s = "오늘은 ";
+	s = s.concat(" 행복한").concat(" 월요일!");
+	System.out.println(s);
+	}
+}
+
+public static void main(String[] args){
+	typecasting2();
+	concat();
+}
+
+
+ 

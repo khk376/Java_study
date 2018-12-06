@@ -1,0 +1,58 @@
+2018.10.15
+
+1) -1. String 와 char을 사칙연산
+    -2. pluse에 대입
+	package step01;
+	
+	public class Syntax5Variable {
+
+		public Syntax5Variable() {}
+
+		public static void m5() {
+			String a = "hello";
+			char a2 = 452;
+			String pluse = (String)(a) + (char)(a2);
+			System.out.println(pluse);
+		}
+		
+		public static void main(String[] args){
+
+			m5();
+		}
+
+	}
+
+2) -1. a*2식 사용
+    -2. if문 으로 100보다 크다 작다 표현
+    -3. concat를 이용하여 if문 문자열에 추가
+
+	package step01;
+	
+	public class Syntax5Variable {
+
+		public Syntax5Variable() {}
+
+		public static void m6(int a) {
+			int b = a * 2;
+			
+			String data = "b는  100보다 큰가?";
+
+			if(b>100) {
+				data = data.concat(" : 크다");
+			}
+			else {
+				data = data.concat(" : 작다");
+			}
+
+			System.out.println(data);
+
+			System.out.println("b : " + b);
+			
+		}
+		
+		public static void main(String[] args){
+
+			m6(10);
+		}
+
+	}

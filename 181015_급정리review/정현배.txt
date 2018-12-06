@@ -1,0 +1,59 @@
+**문제1
+
+public class example {
+
+	example(){
+		System.out.println("1");
+		print();
+	};
+	
+	
+	static void print() {
+		System.out.println("2");
+	}
+	
+	public static void main(String[] args) {
+		example a = new example();
+		System.out.println("3");
+		print();
+		example b = new example();
+	}
+
+}
+
+//과연 콘솔창에는 어떻게 출력이 될까요?
+/* ex)
+ *  1
+ *  2
+ *  3
+ */
+
+
+
+**문제2
+
+public class example {
+
+	void print1() {
+		System.out.println("1번입니다");
+	}
+	
+	static void print2() {
+		System.out.println("2번입니다");
+	}
+	
+	public static void main(String[] args) {
+		example ex = new example();
+		//print1();
+		//print2();
+		//ex.print1();
+		//ex.print2();
+
+
+	}
+
+}
+
+// 주석처리된 4가지 코드중 실행되지 않는코드를 모두 고르시오
+// 그리고 왜 실행이 되지 않는지 쓰시오
+

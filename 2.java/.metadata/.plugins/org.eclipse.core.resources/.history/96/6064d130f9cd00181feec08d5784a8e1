@@ -1,0 +1,16 @@
+package step02.mvc.model;
+
+import step01.ex.Person;
+
+public class Model {
+
+	// 데이터 제공
+	public Person getData() {
+		return new Person("희건", 26);
+		
+	}	
+	// 데이터값 수정
+	public void setData(int newAge) {
+		
+	}
+}

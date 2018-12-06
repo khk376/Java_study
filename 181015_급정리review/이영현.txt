@@ -1,0 +1,38 @@
+2018 10 15 문제 만들기
+
+1.  다음의 코드를 보고 char -> int 으로 형변환 하는 코드를 추가해 출력 하시오.
+	package step01;
+	public class test {
+		public static void typeCasting(){
+			char c = '나';
+			system.out.println(c);
+
+			//답 int i = c;
+			//답 System.out.println(i);
+
+		}
+		
+		public static void main(String[] args) {
+			typeCasting();
+
+		}
+	}
+
+2. 다음의 코드에서 "안녕"이라는 단어에 "하세요"를 붙여 출력하시오. 
+	package step01;
+
+	public class test {
+		public static void concat(){
+			String s = "안녕";
+			System.out.println(s);	
+			//답 String s2 = s.concat("하세요");
+			//답 System.out.println(s2);		
+	
+		}
+
+		public static void main(String[] args) {
+			concat();
+
+		}
+
+	}

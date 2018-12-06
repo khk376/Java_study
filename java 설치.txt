@@ -1,0 +1,90 @@
+1. 자바
+	1. 개발 환경 구축
+		1. JDK
+			- http://java.sun.com
+			- jdk1.8
+			- 설치
+				: path 추가 
+			- API(Application Programming Interface)
+				: 사용 가능한 프로그램들(library)
+			- path 설정후 확인 작업
+			C:\Program Files\Java\jdk1.8.0_181\bin
+			주의사항 : oracle db의 path보다 반드시 앞단에 설정
+
+				>cmd 열어서
+				>java -verson
+				>javac
+
+			- 다수의 sw들은 자바 실행 환경을 필요로 함
+				: 하둡 
+				: 자바 실행 환경이 어디에 설치되어 있는지 정보를 필요로 함
+					- JAVA_HOME
+					- 설치경로와 jdk 이름까지만(root) 등록
+			- 자바소스 프로그램 구성 요소
+				1. 변수
+				2. 생성자
+				3. 메소드
+				4. static{}
+
+			- 실행을 위한 필수 메소드
+				public static void main(String [] args) {}
+				실행 단축키: ctrl+F11
+				자동완성: ctrl+space
+				줄삭제:ctrl+D
+				이름 한꺼번에 변경: Alt+shift+R
+				단체 주석:드래그하고 Ctrl+shift+/
+
+
+		2. 소스 개발 tool
+			- eclipse
+				- http://www.eclipse.org
+				
+		3. 메모장: notepad++
+2. 실습 폴더
+	1. C:\0.ITStudy\2.java
+	2. C:\0.ITstudy\0.sw\3.JDK =>  http://java.sun.com => Java SE Development Kit 8u181
+	    C:\0.ITstudy\0.sw\2.IDE => http://www.eclipse.org => Eclipse IDE for Java EE Developers
+
+3. 문법 정리
+	1. class 선언구
+		class class명{}
+
+	2. 타입 변수명[=값];
+		타입 종류
+			1. 문자열: string
+			2. 정수: int
+			3. 사용자 정의 타입
+		선언 위치
+			1. class 중괄호 내부
+				- 멤버 변수
+				- 객체 생성시 heap라는 메모리에 저장
+			2. main 메소드 내부
+				- 로컬 변수
+					생성자의 () 소괄호에 선언된 변수
+					: 매개 변수, argument or parameter, 인수, 인자...
+				- 선언된 메소드 내부에서만 사용 가능한 변수
+				
+					
+				
+			3. 선언과 호출의 차이점
+				int a; //선언
+				int b=3; //선언, 대입(초기화, 할당)
+				
+				System.out.println(a); //호출
+				a=10; //호출 및 초기화
+				b=50; //호출 및 초기화
+	3. 생성자(constructor)
+		1. 기능
+			1. 객체 생성
+			2. 멤버 변수 초기화
+		2. 특징
+			객체 생성시에만 활용되는 필수 문법
+			미코딩시 컴파일 시점에 자동 생성
+			(단 로직이 없는 기본 생성자)
+		3. 문법
+			1. 선언(개발 문법)
+				클래스명([]){[기능]}
+				People(){}
+				People(String name, int age,...){멤버변수 초기화}
+			2. 호출 문법
+				new 생성자([값,...])

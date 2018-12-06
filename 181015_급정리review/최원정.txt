@@ -1,0 +1,35 @@
+-- 2018/10/15 급정리 review _ 최원정
+
+1.
+main 클래스 내에서 문자열(s1) "오늘은 " 에 concat 메소드를 이용하여 "10월 15일 입니다." 라는 문자열을 추가한 결과(s2)를 출력하고, 
+length 메소드를 이용하여 s2의 길이를 출력하시오.
+
+2.
+public class review {  
+	
+	public static void main(String[] args) {
+		C c = new C();
+	}
+}
+ 
+class A {
+	String aData = "A";
+	A(){
+		System.out.println("A");
+	}
+}
+class B {
+	A bData = new A();
+	B(){
+		System.out.println("B");
+	}
+}
+class C {
+	B cData = new B();
+	int cNo = 10;
+	C(){
+		System.out.println("C");
+	}
+}
+
+에서 객체 간 관계를 그림으로 그리고, 객체의 생성 및 호출 순서를 구하시오.

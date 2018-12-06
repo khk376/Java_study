@@ -1,0 +1,87 @@
+﻿
+	//1.
+	// byte type i=10와 j=20 를 선언, 두 개를 더해서
+	// int type a1 과 byte type a2 로 출력하세요.
+	// i = 100, j = 50 으로 선언시, 출력값이 어떻게 달라지는지 보고
+	// 왜 그런지 생각해보세요.
+	
+	//2.
+	// 순환 참조구조
+	// 아래 코드가 실행이 되지 않고, 빨간색 밑줄이 생기는 이유를 생각해보세요.
+	
+/*
+ package step01;
+
+public class Za_Ryo_Gu_Zo {
+
+	public static void main(String[] args) {
+		C c = new C();
+		System.out.println(c.cNum);
+	}
+}
+
+class A{
+	C aData = new C();
+	A(){
+		System.out.println("A가 실행되었습니다.");
+	}
+}
+class B{
+	A bData = new A();
+	B(){
+		System.out.println("B가 실행되었습니다.");
+	}
+}
+class C{
+	B cData = new B();
+	int cNum = 60;
+	C(){
+		System.out.println("C가 실행되었습니다.");
+	}
+}
+ 
+ */
+
+
+ 
+package step01;
+
+public class Za_Ryo_Gu_Zo {
+	
+
+	public static void strange_byte() {
+		byte i = 10;
+		byte j = 20;
+		int a1 = i + j;
+		byte a2 = (byte)(i+j);
+		System.out.println(a1);
+		System.out.println(a2);
+	}
+	
+	public static void main(String[] args) {
+		strange_byte();
+		C c = new C();
+		System.out.println(c.cNum);
+	}
+
+}
+
+class A{
+	C aData = new C();
+	A(){
+		System.out.println("A가 실행되었습니다.");
+	}
+}
+class B{
+	A bData = new A();
+	B(){
+		System.out.println("B가 실행되었습니다.");
+	}
+}
+class C{
+	B cData = new B();
+	int cNum = 60;
+	C(){
+		System.out.println("C가 실행되었습니다.");
+	}
+}

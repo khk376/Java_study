@@ -1,0 +1,57 @@
+C:\0.ITStudy\99.제출폴더\2.Java\181015_급정리review
+
+
+
+
+김민석.txt
+
+
+1.
+1)문자 A를 실수로 변환하는 cast, 그리고 실수 65를 문자로 변환하는 cast2 클래스를 생성하시오,
+
+
+public static void cast() {
+	char a = 'A';
+	System.out.println(a);
+	double d = a;
+	System.out.println(d);
+}
+
+
+public static void cast2() {
+		double b = 65.0;
+		System.out.println(b);
+		char c = (char)(b);
+		System.out.println(c);
+}
+
+
+public static void main(String args[]){
+	cast();
+	System.out.println();
+	cast2();
+}
+
+
+
+2)어떠한 값이 나오는지 작성하시오.
+A
+65.0
+
+65.0
+A
+
+
+
+2. concat을 사용하여 x 문자열에 y 문자열과 z 문자열을 붙여서 x를 반환하시오.
+
+
+
+public String xy(){
+	String x = "엔코";
+	String y = "아데";
+	String z = "이터";
+	x = x.concat(y).concat(z);
+	return (x);
+}
+

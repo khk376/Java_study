@@ -1,0 +1,33 @@
+1. check1() 이라는 메소드 생성
+  - char 타입을 가진 변수 a 생성 후 '꽝' 입력
+  - a를 정수형으로 형변환한 변수 b 생성
+  - a를 short 타입으로 형변환한 변수 c 생성
+  - 변수 a,b,c 모두 출력해볼 것
+
+//코드
+public static void check1() {
+	char a = '꽝';
+	System.out.println(a);
+		
+	int b = a;
+	System.out.println(b);
+		
+	short c = (short)a;
+	System.out.println(c);
+}
+
+2. concat 메소드 사용해 이미 존재하는 문자열에 새로운 문자열 추가하기
+   - 입력하는 변수명(이름) 뒤에 "열심히", "공부합시다" 라는 문자열 추가
+   - static 제어자 이용
+
+//코드	
+public static String concat(String sName) {
+	String a = " 열심히";
+	String b = " 공부합시다";
+	String c = sName.concat(a).concat(b);
+	return c;
+}
+public static void main(String[] args) {
+	check1();
+	System.out.println(concat("송민지"));
+}

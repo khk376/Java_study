@@ -1,0 +1,23 @@
+#db.properties
+jdbc.driver=oracle.jdbc.driver.OracleDrvier
+jdbc.url=jdbc:oracle:thin:@127.0.0.1:1521:xe
+jdbc.id=SCOTT
+jdbc.pw=TIGER
+
+----------------------------------------------
+전체구조 이해하고 분석하기
+- 미흡하고 찝찝한 구조 재정리 하기
+
+sql문장을 DB에 적용하기
+
+ActivistsDAO 클래스 완성하기
+
+응용[옵션]
+- RrobonoService.java 사용 방법 강구
+- 관점 :enterprise 개발 및 관리자 관점
+
+patter
+1. MVC
+2. DAO
+3. DTO[VO]
+4. Singleton

@@ -1,0 +1,5 @@
+package step02.mvc.view;
+
+public class EndView {
+
+}

@@ -1,0 +1,25 @@
+Java 문제
+1. (1)부터 (4)까지 무엇이 출력되는지 작성하시오.
+
+public class typeTest
+{
+	public static void main(String[] args)
+	{
+		double d;
+		
+		d = 7/6;
+		System.out.println(d); ----- (1)
+		
+		d = (double) 7/6;
+		System.out.println(d); ----- (2)
+		
+		int i;
+		
+		i = (int) 1.4 + (int) 2.7;
+		System.out.println(i); ----- (3)
+		
+		i = (int) (1.4 + 2.7);
+		System.out.println(i); ----- (4)
+	}
+}
+

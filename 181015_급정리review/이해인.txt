@@ -1,0 +1,42 @@
+181015_급정리review_이해인
+
+
+
+조검전까지의 예제를 기반으로 한사람당 두 문제 제출
+이해한 내용에 한해서만 문제 제출
+포맷
+이름.txt
+
+
+public class Syntax5Variable {
+	String aData = "A"; // <-- 
+	public Syntax5Variable() {}
+		
+	public static void m1(int no) {
+		int no2 = no + 2;  // <--
+		System.out.println(no2);
+	}
+
+
+1-1.  String aData = "A" 가 저장되는 메모리의 공간은?
+1-2.   int no2 / no  가 저장 되는 메모리 공간은? 
+
+
+
+2. 밑의 두 메소드는 문자열의 특정 음절을 하나 도출하는 메소드이다.
+1),2)중 올바르게 작성한것을 고르고, 왜 그런지 이유를 작성하여라.
+1)
+public static char charAt(int index){
+	char v = String.charAt(2);  }
+
+---> ( O, X )
+--> 이유 :  
+2)
+public char chatAt(int index) {
+	String s = "동원";
+	char v = s.charAt(2); }
+
+---> ( O, X )
+--> 이유 :  
+
+

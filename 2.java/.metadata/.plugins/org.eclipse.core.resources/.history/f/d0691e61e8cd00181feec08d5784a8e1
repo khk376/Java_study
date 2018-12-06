@@ -1,0 +1,14 @@
+//step01.ex2 폴더에 컴파일 해서 관리하겠다는 선언
+package step01.ex2;
+
+import step01.ex.Person;
+
+//외부 package의 Person을 사용하겠다는 문장
+
+
+public class PersonTest {
+	
+	public static void main(String[] args) {
+		Person p = new Person("희건", 26); // ctrl+shift+o=>import
+	}
+}

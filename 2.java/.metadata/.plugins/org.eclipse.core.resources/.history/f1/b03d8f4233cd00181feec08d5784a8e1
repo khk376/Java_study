@@ -1,0 +1,14 @@
+package step01.reivew02;
+
+
+public class ProTest {
+	
+	public static void main(String [] args) {
+		Producer myProducer = new Producer("Èñ°Ç",11);
+		Product me = new Product(22, myProducer);		
+
+		
+		System.out.println(me.producer.number);
+	}
+		
+}

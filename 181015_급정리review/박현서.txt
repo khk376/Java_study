@@ -1,0 +1,47 @@
+/* [Variable Review를 위한 문제풀이]
+ * Q1. Name, Age, Phone 클래스를 통해 각각의 데이터를 가져와 출력하기
+ * A1.
+ * Q2. 문자열 합쳐보기
+ * A2.
+ */
+package step01.review;
+
+// A1. 클래스 선언 영역
+class Name {
+	String name = "박현서";
+}
+
+class Age {
+	Name getName = new Name();
+	int age = 27;
+}
+
+class Phone {
+	Name getName = new Name();
+	Age getAge = new Age();
+	String phone = "01094752609";
+}
+
+public class VariableReview {
+
+	public static void main(String[] args) {
+		// A1. 출력 영역
+		Phone p = new Phone();
+
+		System.out.println("A1 출력");
+		System.out.println(p.phone);
+		System.out.println(p.getAge.age);
+		System.out.println(p.getAge.getName.name);
+
+		// A2. 출력 영역
+		Add("\nA2: " + "ㅎㅇ", "ㅂㅇ");
+
+	}
+
+	// A2. 매서드 선언 영역
+	public static String Add(String old, String addData) {
+		System.out.println(old + addData);
+		return null;
+	}
+
+}

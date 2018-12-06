@@ -1,0 +1,23 @@
+/* 학습 내용
+ * 1. main메소드 필요성
+ * 2. 자바 문법 변수
+ * 		- 이름/나이
+ * 3. 생성자
+ * 4. 실행 로직
+ * 		1단계 : 변수 선언 및 초기화(값 대입, =)
+ * 			pl sql - 할당, 초기화, :=
+ *		2단계 : 활용(출력)
+ *			메모리에 변수 공간 확보(생성)
+ *			생성된 메모리에 값 대입하는 로직 실제 실행
+ *			메모리로 부터 데이터값 가져와서 콘솔창에 출력
+ */
+package step01;
+
+public class Syntax1Variable {
+
+	public static void main(String[] args) {
+		System.out.println(1);
+		System.out.println("문자열");
+	}
+
+}

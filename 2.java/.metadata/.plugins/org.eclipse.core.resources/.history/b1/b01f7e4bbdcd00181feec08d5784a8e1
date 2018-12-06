@@ -1,0 +1,19 @@
+package step01.reivew;
+
+public class Review1 {
+		//멤버변수 선언위치
+		String msg="금요일";
+		
+		Review1(){}
+		
+		}
+		//객체 생성시 필요한 기본 생성사
+		public static void main(String[] args) {
+			Review1 r= new Review1();
+			//? msg 변수값 : 일요일
+			r.msg="일요일";
+			System.out.println(r.msg);
+			
+	}//end of main
+		
+}//end of class
